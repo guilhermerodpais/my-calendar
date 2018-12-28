@@ -1,5 +1,15 @@
-# angular-7-role-based-authorization-example
+# FullCalendar Angular with login - BR
 
-Angular 7 - Role Based Authorization Example with Webpack 4
+This is a simple project that was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4 It contains both Calendar & Scheduler from [FullCalendar](https://fullcalendar.io/)
 
-To see a demo and further details go to http://jasonwatmore.com/post/2018/11/22/angular-7-role-based-authorization-tutorial-with-example"# my-calendar" 
+## Install Dependencies
+
+Run `yarn` or `npm install` to install all the necessary dependancies.
+
+## Development server
+
+Run `npm start` for a server. Navigate to `http://localhost:8080`. The app will automatically reload if you change any of the source files.
+
+## FullCalendar Scheduler License Information
+
+For more information about licensing the `Scheduler`please visit [FullCalendar Scheduler License](https://fullcalendar.io/scheduler/license)
