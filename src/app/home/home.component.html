@@ -1,0 +1,41 @@
+<div class="title-top">
+  <h1>Agenda</h1></div>
+<div class="headerCommand limitSize">
+  <button type="button" class="btn btn-primary" data-dismiss="" (click)="addNewEvent()">Adicionar evento</button>
+</div>
+<div style="text-align:center" class="limitSize">
+  <div *ngIf="calendarOptions">
+    <ng-fullcalendar id="myCalendar" #ucCalendar [options]="calendarOptions" (eventClick)="eventClick($event.detail)" (eventDrop)="updateEvent($event.detail)" (eventResize)="updateEvent($event.detail)" (clickButton)="clickButton($event.detail)" (dayClick)="dayClick($event.startDate)"></ng-fullcalendar>
+  </div>
+</div>
+
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal" [style.display]="showModal ? 'block' : 'none'">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">{{ name }}</h4>
+        <button type="button" class="close" data-dismiss="modal" (click)="hide()">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        Inicio : {{ dateStart }}<br> Fim : {{ dateEnd }}
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="updateEvent()">Salvar</button>
+        <button type="button" class="btn btn-alert" data-dismiss="modal" (click)="deleteEvent()">Deletar</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal" (click)="hide()">Close</button>
+      </div>
+
+    </div>
+  </div>
+
+
+</div>

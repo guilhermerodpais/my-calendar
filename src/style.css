@@ -1,0 +1,170 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: #ebebeb;
+  overflow-x: hidden;
+  -webkit-transition: all .2s ease-out 0s;
+  -moz-transition: all .2s ease-out 0s;
+  -o-transition: all .2s ease-out 0s;
+  transition: all .2s ease-out 0s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.jumbotron {
+  background: transparent;
+}
+
+.box {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  background: #fff;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .09);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .09);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .09);
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+
+.box .col-md-12 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.limitSize {
+  padding: 1rem;
+}
+
+.title-top h1 {
+  font-size: 1.3rem;
+  background: #40315e;
+  color: #ebebeb;
+  padding: 1rem;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
+
+/* CALENDARIO */
+
+.fc-state-default {
+  text-shadow: rgba(255, 255, 255, 0) 0px 1px 1px;
+  box-shadow: rgba(255, 255, 255, 0) 0px 1px 0px inset, rgba(0, 0, 0, 0) 0px 1px 2px;
+  background-color: rgb(255, 255, 255);
+  background-image: none;
+}
+
+ng-fullcalendar h2 {
+  color: #999;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 27px;
+}
+
+ng-fullcalendar th.fc-day-header span {
+    color: #999;
+    font-weight: 400;
+    font-size: 0.9rem;
+}
+
+.headerCommand.limitSize {
+    padding-left: 1rem !important;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+/* LISTA */
+.box li {
+    list-style: none;
+    padding: 0.7rem;
+}
+.box li:nth-child(even) {background: #c5788e}
+
+.box li:nth-child(odd) {background: #df94a9;}
+
+/* LOGIN */
+
+body.login-page {
+    background-color: #40315e;
+    background-image: url(assets/backTransLogin.png);
+    background-size: cover;
+}
+
+.limitSize.login {
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    max-width: 531px;
+    width: auto;
+    margin: 0 auto;
+    padding: 70px 90px;
+}
+
+.addShadow {
+    -webkit-box-shadow: -11px 11px 97px -26px rgba(0,0,0,0.75);
+    -moz-box-shadow: -11px 11px 97px -26px rgba(0,0,0,0.75);
+    box-shadow: -11px 11px 97px -26px rgba(0,0,0,0.75);
+}
+
+.login-page p {
+    color: #6d5a81;
+}
+
+.WelcomeMessage h1 {
+    color: #00cf8a;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+.login-right {
+    padding: 3rem;
+}
+
+.login-page .form-group label {
+    color: #6d5a81;
+    font-weight: 500;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.login-page .form-group button.btn.btn-primary {
+    margin: 1rem 0;
+}
+
+.login-left {
+    background: #6d5a81;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #DD4E75;
+    border-color: #DD4E75;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #40315E;
+    border-color: #40315E;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #40315E;
+    border-color:#40315E;
+}
+
+.alert-info {
+    color: #414141;
+    background-color: #D3D3DD;
+    border-color: #D3D3DD;
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.logoLogin img {
+    max-width: 100%;
+    padding: 2rem;
+}
